@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <title>Document</title>
+</head>
+<body>
+  
+  <header>
+    <nav class="flex items-center justify-between flex-wrap bg-black p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+        <span class="font-semibold text-xl tracking-tight">Tienda Marquez</span>
+      </div>
+      <div id="boton" class="block lg:hidden">
+        <button id='boton' class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div id='menu' class="w-full block  lg:items-center lg:w-auto flex justify-end">
+        <div class="text-sm lg:flex-grow">
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 ease-in duration-300 mr-4">
+            Nosotros
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 ease-in duration-300 mr-4">
+            Productos
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 ease-in duration-300 mr-4">
+            Servicios
+          </a>
+        </div>
+      </div>
+    </nav>
+        
+      
+     
+  </header>
+
+
+  <main>    
+   <div class="container mx-auto ">
+      <div class="bg-white ">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <h2 class="text-2xl font-bold tracking-tight text-gray-900">Nuevo producto</h2>
+      
+          <div class="mt-6 grid grid-cols-1 gap-x-2 gap-y-10 sm:grid-cols-3 lg:grid-cols-3 xl:gap-x-40 gap-40 gap-x-5">
+
+            <div class="group relative shadow-lg shadow-red-500">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200 ">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500 m-left-2">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-cyan-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200 ">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+
+            <div class="group relative shadow-lg shadow-blue-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200 ">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <footer class="text-center shadow-lg">
+    <div class="grid grid-cols-3 gap-3 bg-gray-600 p-20">
+      <div>    
+        <h2 class="text-2xl font-bold ">Contactanos</h1>
+          <ul>
+            <li class=" font-medium">correo@gmail.com</li>
+            <li class=" font-medium">3221323456</li>
+            <li class=" font-medium">Skype 323452</li>
+          </ul>
+      </div>
+      <div>    
+        <h2 class="text-2xl font-bold ">siguenos</h2>
+        <ul>
+          <li class=" font-medium">correo@gmail.com</li>
+          <li class=" font-medium">3221323456</li>
+          <li class=" font-medium">Skype 323452</li>
+        </ul>
+
+      </div>
+      <div>    
+        <h2 class="text-2xl font-bold ">Info</h2>
+        <p> Lorem ipsum dolor sisit 
+          minima blanditiis, 
+          ab aliquam exercitationem.xxxxxxxxxxxxxxx
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <script src="/js/navbar.js"></script>
+</body>
+</html>
