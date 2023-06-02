@@ -4,229 +4,337 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="stylesheet" href="style.css">
-     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/dark.css">
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <title>Marquez</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="index.html">
-                <img src="img/logo.svg">
-            </a>
-            <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#contactenos">Contactenos</a>
-
-            </nav>
+  
+  <header>
+    <nav class="flex items-center justify-between flex-wrap bg-black p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+        <span class="font-semibold text-xl tracking-tight">Tienda Marquez</span>
+      </div>
+      <div id="boton" class="block lg:hidden">
+        <button id='boton' class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div id='menu' class="w-full block  lg:items-center lg:w-auto flex justify-end">
+        <div class="text-sm lg:flex-grow">
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 ease-in duration-300 mr-4">
+            Nosotros
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 ease-in duration-300 mr-4">
+            Productos
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 ease-in duration-300 mr-4">
+            Servicios
+          </a>
         </div>
-    </header>
+      </div>
+      <button class="switch" id="switch">
+        <span><i class="fas fa-sun"></i></span>
+        <span><i class="fas fa-moon"></i></span>
+      </button>
+    </nav>
+  </header>
 
-    <main>
-        <section id="inicio">
-            <img src="img/bannerprincipal.jpg" class="logo">
-            <div class="bloque-inicio">
-                <h1> Bienvenidos a Coca Cola</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nulla placerat ac dui in facilisis. In hac habitasse platea dictumst.
-                    Nam vel nisl placerat, blandit ex ac, bibendum orci. Pellentesque
-                    luctus mauris enim, id lacinia erat consequat at. Aliquam erat volutpat.
-                    Phasellus euismod facilisis libero at eleifend. 
-                </p>
-                <a href="#nosotros" class="boton">Ver mas</a>
-            </div>
 
-        </section>
-
-        <section id="nosotros">
-            <div class="container">
-                Sed tincidunt sed magna mattis fringilla.
-                 Duis at tincidunt nunc, nec tempor elit. 
-                 Suspendisse ultricies libero in sagittis 
-                 suscipit. Aliquam feugiat quam et mauris 
-                 volutpat mattis. Maecenas mollis libero
-                  quis lobortis feugiat.
-            </div>
-
-        </section>
-
-        <section id="servicios">
-            <div class="container">
-                <div class="row">
-                    <div class="columna columa-33">
-                        <div class="bloque-servicio">
-                            <div class="bloque-img-servicio">
-                                <img src="img/servicio1.jpg">
-                            </div>
-                            <div class="bloque-contenido-servicio">
-                                <h3>Servicio 1</h3>
-                                <p>Sed tincidunt sed magna mattis fringilla.
-                                    Duis at tincidunt nunc, nec tempor elit. 
-                                    Suspendisse
-                                </p>
-                                <a href="#" class="boton">Ver mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columna columa-33">
-                        <div class="bloque-servicio">
-                            <div class="bloque-img-servicio">
-                                <img src="img/servicio2.jpg">
-                            </div>
-                            <div class="bloque-contenido-servicio">
-                                <h3>Servicio 2</h3>
-                                <p>Sed tincidunt sed magna mattis fringilla.
-                                    Duis at tincidunt nunc, nec tempor elit. 
-                                    Suspendisse
-                                </p>
-                                <a href="#" class="boton">Ver mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columna columa-33">
-                        <div class="bloque-servicio">
-                            <div class="bloque-img-servicio">
-                                <img src="img/servicio3.jpg">
-                            </div>
-                            <div class="bloque-contenido-servicio">
-                                <h3>Servicio 3</h3>
-                                <p>Sed tincidunt sed magna mattis fringilla.
-                                    Duis at tincidunt nunc, nec tempor elit. 
-                                    Suspendisse
-                                </p>
-                                <a href="#" class="boton">Ver mas</a>
-                            </div>
-                        </div>
-                    </div>
+  <main>    
+    <div class="mx-auto">
+      <div class="bg-white dark:bg-gray-800">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <h2 class="text-2xl font-bold tracking-tight text-gray-900">Nuevo producto</h2>
+          <div class="mt-6 grid grid-cols-1 gap-x-2 gap-y-10 sm:grid-cols-3 lg:grid-cols-3 xl:gap-x-40 gap-40 gap-x-5">
+            <div class="group relative shadow-lg shadow-red-500">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500 m-left-2">Negra</p>
                 </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
             </div>
-
-        </section>
-
-        <section id="galeria">
-            <div class="container fluid">
-                <div class="row">
-                    <div class="columna-33">
-                        <div class="cuadrado-perfecto">
-                            <img src="img/servicio1.jpg">
-                            <h4>Imagen1</h4>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="columna-33">
-                        <div class="cuadrado-perfecto">
-                            <img src="img/servicio2.jpg">
-                            <h4>Imagen2</h4>
-                        </div>        
-                    </div>
-                    <div class="columna-33">
-                        <div class="cuadrado-perfecto">
-                            <img src="img/servicio3.jpg">
-                            <h4>Imagen3</h4>
-                        </div>   
-                    </div>
-                    <div class="columna-33">
-                        <div class="cuadrado-perfecto">
-                            <img src="img/servicio4.jpg">
-                            <h4>Imagen4</h4>
-                        </div>    
-                    </div>
-                    <div class="columna-33">
-                        <div class="cuadrado-perfecto">
-                            <img src="img/servicio5.jpg">
-                            <h4>Imagen5</h4>
-                        </div>    
-                    </div>
-                    <div class="columna-33">
-                        <div class="cuadrado-perfecto">
-                            <img src="img/servicio6.jpg">
-                            <h4>Imagen6</h4>
-                        </div>   
-                    </div>
+            <div class="group relative shadow-lg shadow-cyan-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
             </div>
-
-        </section>
-
-        <section id="contactenos">
-            <div class="container">
-                <div class="row">
-                    <div class="columna columna-50">
-                        <form action="" method="post">
-                            <div class="form-block">
-                                <input type="text" name="nombre" class="form-control">
-                            </div>
-                            <div class="form-block">
-                                <input type="email" name="email" class="form-control">
-                            </div>
-                            <div class="form-block">
-                               <textarea name="mensaje"></textarea>
-                            </div>
-                            <div class="form-block">
-                                <input type="submit" value="enviar">
-                             </div>
-                        </form>
-                    </div>
+            <div class="group relative shadow-lg shadow-blue-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
                 </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15949.782263035451!2d-75.93469995!3d1.9761003999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1684962543569!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </section>
-
-
-    </main>
-    
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="columna columna-25">
-                    <img src="img/logo-blanco.png" class="logo-footer">
-                    <p>Duis at tincidunt nunc, nec tempor elit. 
-                    Suspendisse</p>
+            <div class="group relative shadow-lg shadow-cyan-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
                 </div>
-                <div class="columna columna-25">
-                    <h3>
-                        Temas relacionados
-                    </h3>
-                    <ul>
-                        <li><a href="#">Tema 1</a></li>
-                        <li><a href="#">Tema 2</a></li>
-                        <li><a href="#">Tema 3</a></li>
-                    </ul>
-                </div>
-                <div class="columna columna-25">
-                    <h3>
-                        Datos de contacto
-                    </h3>
-                    <ul>
-                        <li>jacobo@gmail.com</li>
-                        <li>+57 3134565432</li>
-                        <li>av unidad verde<br> Lima peru</li>
-                    </ul>
-                </div>
-                <div class="columna columna-25">
-                    <h3>
-                        Redes Sociales
-                    </h3>
-                    <ul>
-                        <li><a href="#"><i></i></a></li>
-                        <li><a href="#"><i></i></a></li>
-                        <li><a href="#"><i></i></a></li>
-                    </ul>
-                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
             </div>
+            <div class="group relative shadow-lg shadow-orange-400">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basicas
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-green-500">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-purple-500">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-violet-500">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-cyan-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-05.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-cyan-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-06.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-cyan-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-07.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-cyan-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-08.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+            <div class="group relative shadow-lg shadow-cyan-500/50">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 dark:bg-gray-700 lg:aspect-none group-hover:opacity-75 lg:h-80 ease-in duration-200">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <div class="mt-4 flex justify-between ml-3">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Camiseta Basica
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">Negra</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">$35</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="barra-footer">
-            &copy; Derechos Reservados - 2020
-        </div>
+      </div>
+    </div>
+  </main>
+  <div id="button-up">
+    <i class="fas fa-chevron-up"></i>
+</div>
 
-    </footer>
+
+  <footer class="text-center shadow-lg">
+    <div class="grid grid-cols-3 gap-3 bg-gray-600 p-20">
+      <div>    
+        <h2 class="text-2xl font-bold">Contactanos</h1>
+          <ul>
+            <li class="font-medium">correo@gmail.com</li>
+            <li class="font-medium">3221323456</li>
+            <li class="font-medium">Skype 323452</li>
+          </ul>
+      </div>
+      <div>    
+        <h2 class="text-2xl font-bold">siguenos</h2>
+          <ul class="sci mt-5">
+              <li data-text="Facabook" data-color="#1877f2">
+                  <a href="#" class="facebook"><i class='bx bxl-facebook' ></i></a>
+              </li>
+              <li data-text="Instgram" data-color="#e4405f">
+                  <a href="#" class="instagram"><i class='bx bxl-instagram' ></i></a>
+              </li>
+              <li data-text="Whatsapp" data-color="#25d366">
+                  <a href="#" class="whatsapp"><i class='bx bxl-whatsapp' ></i></a>
+              </li>
+              <li data-text="Twitter" data-color="#0099ff">
+                  <a href="#" class="twitter"><i class='bx bxl-twitter' ></i></a>
+              </li>
+              <li data-text="Youtube" data-color="#ff0000">
+                  <a href="#" class="youtube"><i class='bx bxl-youtube' ></i></a>
+              </li>
+          </ul>
+
+      </div>
+      <div>    
+        <h2 class="text-2xl font-bold">Info</h2>
+        <p>Lorem ipsum dolor sisit 
+          minima blanditiis, 
+          ab aliquam exercitationem.xxxxxxxxxxxxxxx
+        </p>
+
+      </div>
+    </div>
+    <div class="barra-footer bg-gray-600 font-bold">
+      &copy; Derechos Reservados - 2020
+  </div>
+  </footer>
+
+  <script src="/js/index.js" type="module"></script>
+  <script src="/js/scroll.js"></script>
+
+
+
 
 </body>
 </html>
